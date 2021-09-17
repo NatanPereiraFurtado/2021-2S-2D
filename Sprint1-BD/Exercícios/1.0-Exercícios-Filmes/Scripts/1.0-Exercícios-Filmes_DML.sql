@@ -1,0 +1,17 @@
+USE CATALOGO
+GO
+
+INSERT INTO GENERO(nomeGenero)
+VALUES ('terror'), ('romance');
+GO
+
+SELECT * FROM GENERO
+
+DELETE FROM GENERO
+WHERE IdGenero = 6 
+
+
+INSERT INTO FILMES(IdGenero,tituloFilme)
+VALUES (NULL, 'LUXO');
+
+SELECT * FROM FILMES 
