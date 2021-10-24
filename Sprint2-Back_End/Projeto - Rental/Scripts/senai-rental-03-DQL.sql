@@ -1,0 +1,28 @@
+USE M_Rental
+GO
+
+SELECT * FROM MARCA
+GO
+
+SELECT * FROM EMPRESA
+GO
+
+SELECT * FROM CLIENTE
+GO
+
+SELECT * FROM MODELO
+GO
+
+SELECT * FROM VEICULOS
+GO
+
+SELECT * FROM ALUGUEL
+GO
+
+SELECT  idVeiculos,  nomeModelo, Placa FROM ALUGUEL
+LEFT JOIN 
+WHERE idAluguel = @idAluguel
+GO
+
+SELECT idVeiculos, nomeModelo, Placa FROM VEICULOS LEFT JOIN MODELO ON VEICULOS.idModelo = MODELO.idModelo WHERE idModelo = @idModelo
+GO
